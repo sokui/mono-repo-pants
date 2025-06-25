@@ -1,0 +1,9 @@
+[project]
+name = "package1 test"
+version = "0.1.0"
+dependencies = [
+  "websocket-client>=1.8.0",
+  "pytest",
+  "pytest-cov"
+]
+requires-python = ">=3.9"

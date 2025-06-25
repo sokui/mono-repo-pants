@@ -1,0 +1,32 @@
+[GLOBAL]
+pants_version = "2.25.0"
+backend_packages = [
+  "pants.backend.build_files.fmt.black",
+  "pants.backend.experimental.python",
+  "pants.backend.python",
+  "pants.backend.python.lint.docformatter",
+  "pants.backend.python.lint.black",
+  "pants.backend.python.lint.flake8",
+  "pants.backend.python.lint.isort",
+  "pants.backend.python.typecheck.mypy",
+]
+
+[source]
+root_patterns = [
+  "/src/python",
+  "/test/python"
+]
+
+[python]
+interpreter_constraints = [">=3.9,<4.0"]
+enable_resolves = true
+default_resolve = "python-default"
+
+[python.resolves]
+python-default = "3rdparty/python/python-default.lock"
+
+[python-bootstrap]
+search_path = [
+    "<PYENV>",
+    "/usr/local/bin",
+]

@@ -1,0 +1,7 @@
+[project]
+name = "lib1"
+version = "0.1.0"
+dependencies = [
+  "pyopenssl==25.1.0",
+]
+requires-python = ">=3.9"
