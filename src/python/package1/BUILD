@@ -13,7 +13,7 @@ python_requirements(
 python_distribution(
     name="dist",
     provides=python_artifact(
-        name="my_text_streaming_service",
+        name="package1",
         version="0.1.0",
         description="An example distribution built with Pants.",
         author="Pantsbuild",
