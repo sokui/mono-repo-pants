@@ -1,0 +1,4 @@
+[project]
+dependencies = [
+  "websocket-client>=1.8.0",
+]

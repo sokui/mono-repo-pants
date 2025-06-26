@@ -6,6 +6,6 @@ python_requirements(
 python_tests(
     name="tests",
     dependencies=[
-        "//src/python/package1:package1",
+        "//src/python/some_package/package1:package1",
     ]
 )

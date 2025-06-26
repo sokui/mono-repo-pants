@@ -1,4 +1,4 @@
-from lib1.lib1 import l
+from some_package.lib1.lib1 import l
 import tornado
 
 p = 1

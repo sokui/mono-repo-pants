@@ -30,3 +30,6 @@ search_path = [
     "<PYENV>",
     "/usr/local/bin",
 ]
+
+[mypy]
+args = ["--namespace-packages", "--explicit-package-bases", "--ignore-missing-imports"]

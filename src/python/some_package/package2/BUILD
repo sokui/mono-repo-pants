@@ -1,7 +1,7 @@
 python_sources(
     name="package2",
     dependencies=[
-        "//src/python/lib1:lib1",
+        "//src/python/some_package/lib1:lib1",
     ]
 )
 

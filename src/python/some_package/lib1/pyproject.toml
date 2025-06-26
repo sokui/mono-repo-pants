@@ -1,0 +1,4 @@
+[project]
+dependencies = [
+  "pyopenssl==25.1.0",
+]

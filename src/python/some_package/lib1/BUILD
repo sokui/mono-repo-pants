@@ -10,18 +10,12 @@ python_requirements(
 python_distribution(
     name="dist",
     provides=python_artifact(
-        name="package1",
+        name="lib1",
         version="0.1.0",
         description="An example distribution built with Pants.",
         author="Pantsbuild",
-        classifiers=[
-            "Programming Language :: Python :: 3.9",
-        ],
     ),
     dependencies=[
         ":lib1",  # Reference your code
     ],
-    wheel_config_settings={"--global-option": ["--python-tag", "py39"]},
-    # repositories=["pypi"],  # Optional: for publishing
-    generate_setup = True,
 )
